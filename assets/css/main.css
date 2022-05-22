@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* --------------GLOBAL--------------- */
+.header-transparent {
+    background: transparent;
+}
+.header-white {
+    background: white;
+    padding-bottom: 0;
+}
+.header-white .navigation__links {
+    color: black;
+}
+.header-white .header__logo {
+    filter: invert(1);
+}
+.header-gap {
+    padding-top: 150px;
+}
+.page-title {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+::-webkit-scrollbar-track {
+    background: #666666;
+}
+
+/* --------------GLOBAL--------------- */
+
+/* --------------NORMALIZE--------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-max {
+    max-width: 1200px;
+}
+
+/* --------------NORMALIZE--------------- */
+
+
+
+/* --------------LOGIN & REGISTRATION--------------- */
+.unlogin{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    justify-content: center;
+}
+.unlogin h1{
+    font-size: 20px;
+    text-align: center;
+    color: #535353;
+    margin-bottom: 10px;
+}
+.unlogin__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.unlogin .star{
+    height: 25px;
+    position: relative;
+}
+.unlogin .starwrapper{
+    position: relative;
+    margin-bottom: 10px;
+}
+.unlogin .starwrapper.lines::before{
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    right: 50px;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background: #707070;
+}
+.unlogin .starwrapper.lines::after{
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    left: 50px;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background: #707070;
+}
+.unlogin__main>input{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 2px solid #707070;
+    width: 100%;
+}
+.unlogin__checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.unlogin__checkboxes label{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.unlogin__checkboxes a{
+    color: #8F4A48;
+}
+.unlogin__checkboxes a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.unlogin__checkboxes input{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid #707070;
+}
+.unlogin__main button{
+    background: #EDEDED;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.form-link, .reset-password-link{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+.reset-password-link{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.form-link a:hover, .reset-password-link a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.separate-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.separate-line .line{
+    height: 300px;
+    width: 5px;
+    background: #B9B9B9;
+}
+.unlogin__info{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.unlogin__info div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.unlogin__info div p{
+    max-width: 200px;
+}
+.unlogin__info-title{
+    color: #535353;
+    margin-bottom: 25px;
+}
+.reset-password p{
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 350px;
+}
+/* --------------LOGIN & REGISTRATION--------------- */
+
+
+/* --------------HEADER--------------- */
+
+header {
+    padding: 30px 140px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1640px;
+    z-index: 100;
+    left: calc(50% - 8px);
+    transform: translateX(-50%);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navigation__links {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+/* --------------HEADER--------------- */
+
+/* --------------FILM LIST--------------- */
+
+.screen-bg-1 {
+    background: url("/assets/img/onNail.png");
+}
+.screen-bg-2 {
+    background: url("/assets/img/cofeeAndSigarets.png");
+}
+.screen-bg-3 {
+    background: url("/assets/img/flyAbove.png");
+}
+.screen-bg-4 {
+    background: url("/assets/img/deadMan.png");
+}
+
+.film {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.film__inner {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.film__pretitle {
+    font-size: 22px;
+}
+
+.film__title {
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 84px;
+    text-align: center;
+}
+
+.film__subtitle {
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.film__link {
+    display: block;
+    font-size: 22px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+}
+
+.film__link:hover {
+    background: white;
+    color: black;
+}
+
+.main__wrapper.snap-scroll {
+    overflow-x: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+/* --------------FILM LIST--------------- */
+
+/* --------------NEWS--------------- */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.news__article {
+    display: flex;
+    align-items: stretch;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.news .article__img_left {
+    order: -1;
+}
+.news .article__img_right {
+    order: 1;
+}
+
+.news .article__info {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 24px;
+}
+.news .info {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.news .info__date {
+    margin-bottom: 30px;
+}
+.news .info__title {
+    font-size: 34px;
+    line-height: 48px;
+    flex-grow: 1;
+}
+.news .info__link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: inherit;
+}
+
+/* --------------NEWS--------------- */
+
+/* --------------DISTRIBUTE--------------- */
+
+.distribute {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.distribute__article{
+    position: relative;
+}
+.distribute__img{
+    width: 100%;
+    height: 400px;
+}
+.distribute__info{
+    padding: 15px 5px;
+    background: #EDEDED;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100px;
+}
+
+.distribute .info__pretitle{
+    color: #4C4C4C;
+    margin-bottom: 15px;
+}
+
+.distribute .info__title{
+    color: black;
+    font-size: 1.25em;
+}
+.distribute__link{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* --------------DISTRIBUTE--------------- */
+
+
+
+
+/* --------------ABOUT--------------- */
+.about{
+    background: url("/assets/img/aboutUsBg.png");
+    height: 100vh;
+    overflow: hidden;
+    font-size: 10px;
+}
+.about__inner{
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1100px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+.about h1{
+    font-size: 6em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about-gray{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #D3D3D3 !important;
+    text-align: center;
+}
+.about__text{
+    font-size: 2.2em;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about .tar{
+    align-self: flex-end;
+    position: relative;
+    right: -100px;
+}
+/* --------------ABOUT--------------- */
+
+
+/* --------------FILM--------------- */
+.header-static{
+    position: absolute !important;
+}
+.film-details{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.film-details-container{
+    width: 1500px;
+    margin: 0 50px 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.film-details__header{
+    background: url("/assets/img/deadMan-header.png");
+    height: 450px;
+}
+.film-details__header-inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    height: 450px;
+}
+.film-details__header-text{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    line-height: 130%;
+    max-width: 800px;
+
+}
+.film-details__main-inner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+    width: 950px;
+    color: black;
+}
+.film-details__main-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.fly-wrapper{
+    position: sticky;
+    top: 170px;
+    order: 2;
+    width: 400px !important;
+}
+.film-details__fly-img{
+    position: relative;
+    top: -150px;
+    height: 400px;
+}
+.film-details .title{
+    font-size: 2em;
+}
+.film-details .date{
+    font-size: 1.25em;
+}
+.film-details .gap{
+    padding-left: 60px;
+}
+.film-details .paragraph{
+    color: #424242;
+    font-size: 1.25em;
+    line-height: 150%;
+}
+.film-details img{
+    width: 100%;
+}
+.buy-ticket{
+    background: #FFD052;
+    padding: 20px 50px;
+    position: relative;
+    top: -150px;
+}
+.buy-tiket__text{
+    margin-bottom: 10px;
+}
+.buy-ticket-paragraph{
+    font-size: 0.8em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    color: black;
+}
+.buy-ticket__bottom p{
+    font-size: 1.25em;
+    color: black;
+    margin-bottom: 10px;
+}
+.buy-ticket__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.trailer-link{
+    color: black;
+    font-size: 1.25em;
+    text-decoration: underline;
+    margin-top: 20px;
+    display: block;
+}
+/* --------------FILM--------------- */
+
+
+
+/* --------------FOOTER--------------- */
+.footer {
+    color: #bdbdbd;
+    font-family: "Roboto", sans-serif;
+    background: black;
+    margin-top: 50px;
+}
+.footer__top,
+.footer__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer__bottom {
+    padding: 30px 0;
+}
+.footer__top {
+    font-size: 20px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.form__inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.form__inner {
+    color: inherit;
+    font-size: 14px;
+}
+.form__inner input {
+    border: 2px solid #bdbdbd;
+    color: inherit;
+    padding: 10px 15px;
+    border-right: none;
+}
+.form__inner button {
+    padding: 15px;
+    color: black;
+    background: white;
+    border: 2px solid transparent;
+}
+.form__inner button:hover {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+.footer__wrapper {
+    padding: 60px 140px 0px 140px;
+    max-width: 1640px;
+    margin: 0 auto;
+}
+.form__title {
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+.footer__navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer__navigation-links {
+    color: inherit;
+    font-size: inherit;
+}
+.footer__navigation-links:hover {
+    color: white;
+}
+.footer__navigation-list_right {
+    text-align: right;
+}
+.footer__navigation {
+    order: 1;
+}
+
+.footer__form {
+    order: 2;
+}
+.footer__navigation_right {
+    order: 3;
+}
+/* --------------FOOTER--------------- */

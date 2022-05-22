@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/media.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header-white">
+            <div class="header__wrapper">
+                <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo" class="header__logo"></a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="distribution.html" class="navigation__links">Кинопрокат</a></li>
+                        <li class="navigation__item"><a href="news.html" class="navigation__links">Новости</a></li>
+                        <li class="navigation__item"><a href="about.html" class="navigation__links">О нас</a></li>
+                        <li class="navigation__item"><a href="login.html" class="navigation__links">Мой аккаунт</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main header-gap">
+            <div class="container container-max">
+                <section class="registration unlogin">
+                    <form class="unlogin__main">
+                        <h1>Регистрация</h1>
+                        <div class="starwrapper lines">
+                            <img src="/assets/img/star.svg" alt="" class="star">
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Пароль">
+                        <div class="unlogin__checkboxes">
+                            <label><input type="checkbox" name="agreement" id="agreement"><span>Я принимаю условия <a href="">пользовательского соглашения</a></span></label>
+                            <label><input type="checkbox" name="mailing" id="mailing"><span>Я соглашаюсь получать рассылку</span></label>
+                        </div>
+                        <button type="submit">Зарегестрироваться</button>
+                        <p class="form-link">Уже есть аккаунт на "name"? <a href="login.html">Войти</a></p>
+                    </form>
+                    <div class="separate-line">
+                        <img src="/assets/img/star.svg" alt="" class="star">
+                        <div class="line"></div>
+                        <img src="/assets/img/star.svg" alt="" class="star">
+                    </div>
+                    <div class="unlogin__info">
+                        <p class="unlogin__info-title">Ваш персональный аккаунт<br>на: "name компания"</p>
+                        <div>
+                            <img src="/assets/img/bell.svg" alt="">
+                            <p>Получение уведомлений новостей на почту</p>
+                        </div>
+                        <div>
+                            <img src="/assets/img/phone.svg" alt="">
+                            <p>Синхронизация с вашим мобильным устройством</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
