@@ -267,16 +267,16 @@ header {
 /* --------------FILM LIST--------------- */
 
 .screen-bg-1 {
-    background: url("/assets/img/onNail.png");
+    background: url("assets/img/onNail.png");
 }
 .screen-bg-2 {
-    background: url("/assets/img/cofeeAndSigarets.png");
+    background: url("assets/img/cofeeAndSigarets.png");
 }
 .screen-bg-3 {
-    background: url("/assets/img/flyAbove.png");
+    background: url("assets/img/flyAbove.png");
 }
 .screen-bg-4 {
-    background: url("/assets/img/deadMan.png");
+    background: url("assets/img/deadMan.png");
 }
 
 .film {
@@ -436,7 +436,7 @@ header {
 
 /* --------------ABOUT--------------- */
 .about{
-    background: url("/assets/img/aboutUsBg.png");
+    background: url("assets/img/aboutUsBg.png");
     height: 100vh;
     overflow: hidden;
     font-size: 10px;
@@ -493,7 +493,7 @@ header {
     padding-right: 15px;
 }
 .film-details__header{
-    background: url("/assets/img/deadMan-header.png");
+    background: url("assets/img/deadMan-header.png");
     height: 450px;
 }
 .film-details__header-inner{
