@@ -88,6 +88,9 @@ img {
 
 
 /* --------------LOGIN & REGISTRATION--------------- */
+.form-link a, .reset-password-link a{
+    color: gray;
+}
 .unlogin{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -267,16 +270,16 @@ header {
 /* --------------FILM LIST--------------- */
 
 .screen-bg-1 {
-    background: url("assets/img/onNail.png");
+    background: url("../img/onNail.png");
 }
 .screen-bg-2 {
-    background: url("assets/img/cofeeAndSigarets.png");
+    background: url("../img/cofeeAndSigarets.png");
 }
 .screen-bg-3 {
-    background: url("assets/img/flyAbove.png");
+    background: url("../img/flyAbove.png");
 }
 .screen-bg-4 {
-    background: url("assets/img/deadMan.png");
+    background: url("../img/deadMan.png");
 }
 
 .film {
@@ -436,10 +439,12 @@ header {
 
 /* --------------ABOUT--------------- */
 .about{
-    background: url("assets/img/aboutUsBg.png");
+    background: url("../img/aboutUsBg.png");
     height: 100vh;
     overflow: hidden;
     font-size: 10px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .about__inner{
     height: 100vh;
@@ -488,12 +493,12 @@ header {
 }
 .film-details-container{
     width: 1500px;
-    margin: 0 50px 0 auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 .film-details__header{
-    background: url("assets/img/deadMan-header.png");
+    background: url("../img/deadMan-header.png");
     height: 450px;
 }
 .film-details__header-inner{

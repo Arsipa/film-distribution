@@ -49,17 +49,17 @@
     .article__img{
         width: 40%;
     }
-    .info__date{
+    .news .info__date{
         margin-bottom: 10px;
     }
-    .info__title{
+    .news .info__title{
         font-size: 26px;
         line-height: 30px;
     }
-    .article__info{
+    .news .article__info{
         font-size: 16px;
     }
-    .info__link img{
+    .news .info__link img{
         width: 80px;
     }
 }
@@ -146,13 +146,13 @@
         max-width: 45%;
         margin-bottom: 30px;
     }
-    .article__img_right{
+    .news .article__img_right{
         order: 0;
     }
     .article__img, .article__info{
         width: 100%;
     }
-    .info__title{
+    .news .info__title{
         margin-bottom: 15px;
         font-size: 24px;
         line-height: 28px;
@@ -221,12 +221,12 @@
     .container-max {
         max-width: 400px;
     }
-    .info__title {
+    .news .info__title {
         margin-bottom: 15px;
         font-size: 18px;
         line-height: 20px;
     }
-    .info__link img {
+    .news .info__link img {
         width: 40px;
     }
     .page-title {
